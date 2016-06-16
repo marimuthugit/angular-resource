@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+		<div class="container">
+			<div class="col-md-12">
+				<img class="site-logo pull-right" src="images/sifylogo1.jpg" alt="">
+			</div>
+		</div>
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+            <div class="account-wall">
+                <img class="profile-img" src="images/lock_green.png"
+                    alt="">
+                <form name="loginForm" class="form-signin">
+					<input type="text" ng-model="loginForm.uname" class="form-control" placeholder="Username" required autofocus>
+					<input type="password" ng-model="loginForm.password" class="form-control" placeholder="Password" required>
+					<button class="btn btn-lg btn-primary btn-block custom_green" ng-disabled="loginForm.$invalid" ng-click="login(loginForm)" type="submit">Sign in</button>
+					<span class="redF"> {{ errorTxt }} </span>
+					<a href="#" class="pull-right need-help">
+						Forgot Password? 
+					</a>
+					<span class="clearfix"></span>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
